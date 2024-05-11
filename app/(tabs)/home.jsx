@@ -1,4 +1,5 @@
 import { View, Text, Image, ScrollView } from 'react-native'
+import { StatusBar } from 'expo-status-bar'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { router } from 'expo-router'
@@ -21,25 +22,22 @@ const Home = () => {
                     </Text>
                     <Image
                       source={images.chickenhome} 
-                      className="w-80 h-80 mt-20 rounded-2xl ml-2" 
+                      className="w-80 h-80 mt-20 rounded-2xl ml-5" 
                       // resizeMode='contain'
                     />
                     </View> 
                     <View className="mt-1 mr-2">
-                      <Image
-                        source={images.logo} 
-                        className="w-16 h-16"
-                        resizeMode='contain'
-                        />
                     </View>
                  </View>
                  <CustomButton
                    title="Go to symptoms"
-                   handlePress={() => router.push('symptoms')}
+                   handlePress={() => router.push('/symptoms')}
                    containerStyles="items-center justify-center"
                    />
               </View>
-            </ScrollView>  
+            </ScrollView>
+            <StatusBar backgroundColor='#161622' 
+            style='light'/>  
         </SafeAreaView>
     )
 }

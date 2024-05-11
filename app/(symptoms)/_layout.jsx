@@ -5,9 +5,12 @@ import { StatusBar } from 'expo-status-bar'
 
 const SymptomsLayout = () => {
   return (
-    <View>
-      <Text>SymptomsLayout</Text>
-    </View>
+    <>
+     <Stack>
+      <Stack.Screen name="symptoms" options={{ headerShown:
+        true }}/>  
+     </Stack>
+    </>
   )
 }
 
