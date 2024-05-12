@@ -14,10 +14,10 @@ const Home = () => {
                 <View className="justify-between items-start
                  flex-row mb-6">
                    <View className="pb-20 mb-2">
-                    <Text className="font-pmedium text-sm text-white">
+                    <Text className="font-pmedium text-sm">
                       Welcome to 
                     </Text>
-                    <Text className="text-2xl font-psemibold text-white">
+                    <Text className="text-2xl font-psemibold">
                      Featherly Care
                     </Text>
                     <Image
