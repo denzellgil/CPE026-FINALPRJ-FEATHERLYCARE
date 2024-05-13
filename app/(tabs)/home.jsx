@@ -20,11 +20,13 @@ const Home = () => {
                     <Text className="text-2xl font-psemibold">
                      Featherly Care
                     </Text>
-                    <Image
-                      source={images.chickenhome} 
-                      className="w-80 h-80 mt-20 rounded-2xl ml-5" 
-                      // resizeMode='contain'
-                    />
+                     <View className="items-center">
+                      <Image
+                        source={images.chickenhome} 
+                        className="w-80 h-80 mt-20 rounded-2xl ml-5" 
+                        // resizeMode='contain'
+                      />
+                     </View>
                     </View> 
                     <View className="mt-1 mr-2">
                     </View>

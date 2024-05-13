@@ -33,7 +33,9 @@ const RootLayout = () => {
         <Stack.Screen name="(tabs)" options={{ headerShown:
         false }}/>  
         <Stack.Screen name="(symptoms)" options={{ headerShown:
-        false }}/>  
+        false }}/>
+        <Stack.Screen name="(diseases)" options={{ headerShown:
+        false }}/>    
       </Stack>
   )
 }
