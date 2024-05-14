@@ -3,28 +3,22 @@ import React, { useState, useRef } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import Carousel from 'react-native-reanimated-carousel';
+import {AntDesign} from '@expo/vector-icons'
 
 const Symptoms = () => {
+
 
   const width = Dimensions.get('window').width
   const [currentPage, setCurrentPage] = useState(0);
 
-  const onPageChange = (index) => {
-    setCurrentPage(index);
-  };
-
-  const onScrollIndexChanged = (index) => {
-    setCurrentPage(index);
-  };
-
   const carouselData = [
-    { id: "1", title: 'Ataxia', image: require("../../assets/images/ataxia.png")},
-    { id: "2", title: 'Diarrhea', image: require("../../assets/images/diarrhea.png")},
-    { id: "3", title: 'Nasal Discharge', image: require("../../assets/images/nasalDischarge.png")},
-    { id: "4", title: 'Sneezing', image: require("../../assets/images/sneezing.png")},
-    { id: "5", title: 'Swollen Comb', image: require("../../assets/images/swollenComb.png")},
-    { id: "6", title: 'Swollen Eyes', image: require("../../assets/images/swollenEyes.png")},
-    { id: "7", title: 'Swollen Feet', image: require("../../assets/images/swollenFeet.png")},
+    { id: "ataxiaPage", title: 'Ataxia', image: require("../../assets/images/ataxia.png")},
+    { id: "diarrheaPage", title: 'Diarrhea', image: require("../../assets/images/diarrhea.png")},
+    { id: "nasalDischargePage", title: 'Nasal Discharge', image: require("../../assets/images/nasalDischarge.png")},
+    { id: "sneezingPage", title: 'Sneezing', image: require("../../assets/images/sneezing.png")},
+    { id: "swollenCombPage", title: 'Swollen Comb', image: require("../../assets/images/swollenComb.png")},
+    { id: "swollenEyesPage", title: 'Swollen Eyes', image: require("../../assets/images/swollenEyes.png")},
+    { id: "swollenFeetPage", title: 'Swollen Feet', image: require("../../assets/images/swollenFeet.png")},
   ];
 
   const carouselRef = useRef(null);
@@ -34,7 +28,7 @@ const Symptoms = () => {
     return (
       <View className="flex-1 justify-center items-center">
         <SafeAreaView className="flex-1 justify-center items-center">
-          <TouchableOpacity onPress={() => router.push("/symptoms/ataxiaPage")} className="flex-1 justify-center items-center mt-10">
+          <TouchableOpacity onPress={() => router.push("/diseases/" + item.id)} className="flex-1 justify-center items-center mt-10">
               <Image 
               source={item.image} 
               resizeMode='contain' className="w-80 h-80"/>
@@ -50,6 +44,9 @@ const Symptoms = () => {
   return (
     <SafeAreaView className=" bg-cadetblue w-full h-full">
       <View className="flex-1">
+        <TouchableOpacity onPress={() => router.back()} className="ml-5 mt-5">
+          <AntDesign name="arrowleft" size={24} color="black"/>
+        </TouchableOpacity>
         <Text className="text-center mb-4 text-2xl font-pbold pt-20">SYMPTOMS</Text>
         <Carousel
           ref={carouselRef}

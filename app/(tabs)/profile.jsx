@@ -17,13 +17,13 @@ const Profile = () => {
                 resizeMode='contain'
              />
                <Text className="text-lg font-psemibold mt-2">
-                Felias, Alliah Shanne A.
+                 Felias, Alliah Shanne A.
                </Text>
                <Text className="text-base font-pmedium">
                 qasafelias@tip.edu.ph
                 </Text>
                 <Text className="text-sm font-pregular mb-5">
-                Railway Engineering  
+                Project Manager 
                 </Text>
 
                 <Image 
@@ -38,7 +38,7 @@ const Profile = () => {
                 qrddpgil@tip.edu.ph
                 </Text>
                 <Text className="text-sm font-pregular mb-5">
-                System Administration
+                Full-Stack Developer
                 </Text> 
 
                 <Image 
@@ -47,13 +47,13 @@ const Profile = () => {
                 resizeMode='contain'
              />
                <Text className="text-lg font-psemibold mt-2">
-                Pilong, Elvin Jay 
+                Pilongo, Elvin Jay L.
                </Text>
                <Text className="text-base font-pmedium">
                 qejlpilongo@tip.edu.ph
                 </Text>
                 <Text className="text-sm font-pregular mb-5">
-                System Administration 
+                UI/UX Designer
                 </Text>  
             </View>
         </View>

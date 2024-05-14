@@ -8,6 +8,8 @@ const SymptomsLayout = () => {
     <>
      <Stack>
       <Stack.Screen name="symptoms" options={{ headerShown:
+        false }}/> 
+      <Stack.Screen name="diseases" options={{ headerShown:
         false }}/>  
      </Stack>
     </>
