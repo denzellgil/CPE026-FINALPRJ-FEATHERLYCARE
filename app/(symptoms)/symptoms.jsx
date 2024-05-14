@@ -23,6 +23,10 @@ const Symptoms = () => {
 
   const carouselRef = useRef(null);
 
+  const onPageChange = (index) => {
+    setCurrentPage(index);
+  };
+
  
   const renderItem = ({ item }) => {
     return (
@@ -55,7 +59,7 @@ const Symptoms = () => {
           data={carouselData}
           renderItem={renderItem}
           onSnapToItem={onPageChange}
-          // onScrollIndexChanged={onScrollIndexChanged} // Corrected the event name here
+          // onScrollIndexChanged={onScrollIndexChanged}
         />
         <View className="flex-row justify-center mb-40 items-center">
           {carouselData.map((_, index) => (
