@@ -11,14 +11,6 @@ const Symptoms = () => {
   const width = Dimensions.get('window').width
   const [currentPage, setCurrentPage] = useState(0);
 
-  const onPageChange = (index) => {
-    setCurrentPage(index);
-  };
-
-  // const onScrollIndexChanged = (index) => {
-  //   setCurrentPage(index);
-  // };
-
   const carouselData = [
     { id: "ataxiaPage", title: 'Ataxia', image: require("../../assets/images/ataxia.png")},
     { id: "diarrheaPage", title: 'Diarrhea', image: require("../../assets/images/diarrhea.png")},
