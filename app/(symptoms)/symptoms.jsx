@@ -3,7 +3,7 @@ import React, { useState, useRef } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import Carousel from 'react-native-reanimated-carousel';
-import {AntDesign} from '@expo/vector-icons'
+import { AntDesign } from '@expo/vector-icons'
 
 const Symptoms = () => {
 
@@ -15,9 +15,9 @@ const Symptoms = () => {
     setCurrentPage(index);
   };
 
-  const onScrollIndexChanged = (index) => {
-    setCurrentPage(index);
-  };
+  // const onScrollIndexChanged = (index) => {
+  //   setCurrentPage(index);
+  // };
 
   const carouselData = [
     { id: "ataxiaPage", title: 'Ataxia', image: require("../../assets/images/ataxia.png")},
@@ -62,8 +62,8 @@ const Symptoms = () => {
           height={350}
           data={carouselData}
           renderItem={renderItem}
-          onPageChange={onPageChange}
-          onScrollIndexChanged={onScrollIndexChanged} // Corrected the event name here
+          onSnapToItem={onPageChange}
+          // onScrollIndexChanged={onScrollIndexChanged} // Corrected the event name here
         />
         <View className="flex-row justify-center mb-40 items-center">
           {carouselData.map((_, index) => (
