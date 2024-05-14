@@ -17,19 +17,29 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "package": "com.gfp.featherlycare"
+      "package": "com.gfp.featherlycare",
+      "bundleIdentifier": "com.denzellgil.featherlycare"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.denzellgil.featherlycare"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "f99f8ee7-7754-46a6-bea1-db2248614ab1"
+      }
+    }
   }
 }
