@@ -20,7 +20,7 @@ const FAQ = () => {
               consists of Home, FAQ, and About.
               </Text>
               <Text className="ml-5 pb-3 text-lg font-psemibold">
-              2. “How do we use the app?”
+              2. “Ok, What to do next?”
               </Text>
               <Text className="ml-2 mb-30 text-xs font-pregular pb-5">
               The symptoms page is where you check your poultry on 
