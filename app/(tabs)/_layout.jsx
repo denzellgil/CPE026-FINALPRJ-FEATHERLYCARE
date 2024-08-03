@@ -94,6 +94,21 @@ const TabsLayout = () => {
         )
        }}
       />
+      <Tabs.Screen
+       name="checklist"
+       options={{
+        title:'Checklist',
+        headerShown: false,
+        tabBarIcon: ({ color, focused}) => (
+          <TabIcon 
+            icon={icons.search}
+            color={color}
+            name="Checklist"
+            focused={focused}
+          />
+        )
+       }}
+      />
     </Tabs>
    </>
   )
