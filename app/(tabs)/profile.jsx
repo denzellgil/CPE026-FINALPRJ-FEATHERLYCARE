@@ -40,7 +40,6 @@ const Profile = () => {
                 <Text className="text-sm font-pregular mb-5">
                 Full-Stack Developer
                 </Text> 
-
                 <Image 
                 source={images.pilongo}
                 className="placeholder:items-center justify-center px-1" 
